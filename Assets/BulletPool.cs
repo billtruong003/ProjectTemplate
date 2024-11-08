@@ -38,7 +38,6 @@ public class BulletPool : MonoBehaviour
 
     public void ReturnBullet(GameObject bullet)
     {
-        // Đặt đạn trở lại vào pool và vô hiệu hóa nó
         bullet.SetActive(false);
         bulletPool.Enqueue(bullet);
     }
